@@ -24,7 +24,7 @@ To install and use this application, follow these steps:
    - `brew install gtk+4`
 3. Install the required dependencies: SoX and the OpenAI Whisper API.
    - Install SOX with Homebrew using `brew install sox`.
-   - Install the Whisper ASR API by following the installation steps in the [Whisper repository](https://github.com/openai/whisper) 
+   - Install the Whisper API by following the installation steps in the [Whisper repository](https://github.com/openai/whisper) 
 
 ## Usage
 
