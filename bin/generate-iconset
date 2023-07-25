@@ -1,0 +1,23 @@
+# name of the input file without the extension
+name="WhisperDesktopDictate"
+
+# create the iconset folder
+mkdir "target/release/${name}.iconset"
+
+# create the various sizes
+sips -z 16 16     "release/${name}-icon.png" --out "target/release/${name}.iconset/icon_16x16.png"
+sips -z 32 32     "release/${name}-icon.png" --out "target/release/${name}.iconset/icon_16x16@2x.png"
+sips -z 32 32     "release/${name}-icon.png" --out "target/release/${name}.iconset/icon_32x32.png"
+sips -z 64 64     "release/${name}-icon.png" --out "target/release/${name}.iconset/icon_32x32@2x.png"
+sips -z 128 128   "release/${name}-icon.png" --out "target/release/${name}.iconset/icon_128x128.png"
+sips -z 256 256   "release/${name}-icon.png" --out "target/release/${name}.iconset/icon_128x128@2x.png"
+sips -z 256 256   "release/${name}-icon.png" --out "target/release/${name}.iconset/icon_256x256.png"
+sips -z 512 512   "release/${name}-icon.png" --out "target/release/${name}.iconset/icon_256x256@2x.png"
+sips -z 512 512   "release/${name}-icon.png" --out "target/release/${name}.iconset/icon_512x512.png"
+sips -z 1024 1024 "release/${name}-icon.png" --out "target/release/${name}.iconset/icon_512x512@2x.png"
+
+# convert the iconset to an icns file
+iconutil -c icns "target/release/${name}.iconset"
+
+# remove the iconset folder
+rm -R "target/release/${name}.iconset"
