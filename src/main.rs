@@ -122,6 +122,13 @@ fn stop_recording_do_transcribe() {
     // wait until the thread is done
     thread.wait().expect("Could not wait for thread");
 
+    // Play some Mac OS text to speech "copied to clipboard"
+    let _ = std::process::Command::new("bash")
+        .arg("-c")
+        .arg(format!("say copied to clipboard"))
+        .spawn()
+        .expect("Could not play sound");
+
     // then kill the app, close the window
     std::process::exit(0);
 }
