@@ -10,9 +10,9 @@ Whisper Desktop Dictate is a prototype desktop application built with Rust and t
 
 ## Current Status
 
-This application is currently in prototype stage. To use it, you need to launch the program using `cargo run`` in your terminal. This will prompt the system to request microphone access.
+This application is currently in prototype stage. To use it, you need to launch the program using `cargo run` in your terminal. This will prompt the system to request microphone access.
 
-Please note that although a macOS app bundle can be created using `make release``, the bundled app currently does not request access to the microphone due to macOS-level restrictions. Work is ongoing to integrate the necessary macOS frameworks to enable this functionality.
+Please note that although a macOS app bundle can be created using `make release`, the bundled app currently does not request access to the microphone due to macOS-level restrictions. Work is ongoing to integrate the necessary macOS frameworks to enable this functionality.
 
 ## Installation
 
